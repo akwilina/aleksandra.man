@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.layer {
+    background-color: rgba(170, 181, 199, 0.6);
+}
+
+/*hero section*/
+.hero {
+    background: url("../images/1_background.png") no-repeat;
+    background-position: right;
+    background-size: 75%;
+    margin-bottom: 100px;
+    height: 70vh;
+}
+
+.hero .logo {
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+    margin-top: 100px;
+}
+
+.hero .layer {
+    height: 70vh;
+}
+
+.slogan {
+    text-align: center;
+    min-width: 400px;
+    max-width: 800px;
+    min-height: 400px;
+    color: #fff;
+    padding: 100px auto;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.slogan .logo {
+    height: 60px;
+    width: 50px;
+    margin-bottom: 40px;
+}
+
+.slogan h1 {
+    text-shadow: 1px 1px 2px #8B8B8B;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.slogan p {
+    text-shadow: 1px 1px 2px #8B8B8B;
+    font-size: 12px;
+}
+
+/*GRID*/
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+}
+
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-2_4 {width: 20%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-4_8 {width: 40%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+/*table section*/
+.container {
+    max-width: 700px;
+    height: auto;
+    text-align: center;
+    margin: 50px auto;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    padding: 20px 80px;
+    color: #8B8B8B;
+    font-size: 15px;
+    position: relative;
+}
+
+.container h1:before {
+    height: 1px;
+    width: 200px;
+    margin-top: 15px;
+    background-color: black;
+    content: "";
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.container h1:after {
+    height: 1px;
+    width: 200px;
+    margin-top: 15px;
+    background-color: black;
+    content: "";
+    display: inline-block;
+    float: right;
+    position: absolute;
+    left: 0;
+}
+
+.container h1 {
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: #fff;
+    letter-spacing: 4px;
+    margin: -40px auto 18px auto;
+    color: black;
+}
+
+.container .text {
+    padding-top: 10px;
+}
+
+/*servicesd section*/
+.services {
+    background: url("../images/2_background.jpg");
+    background-attachment: fixed;
+}
+
+.services .container {
+    border-color: #fff;
+    margin: 100px auto;
+}
+
+.services .container h1:before,
+.services .container h1:after {
+    background-color: #fff;
+}
+
+.services h1 {
+    color: #fff;
+    background: transparent;
+}
+
+.services p {
+    color: #fff;
+}
+
+/*description section*/
+.description .icons {
+    height: 60px;
+    width: 55px;
+}
+
+.description h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.description h3 {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.description p {
+    margin-bottom: 50px;
+}
+
+/*gallery section*/
+.gallery img {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.gallery .layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .layer:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallery .layer:hover h2 {
+    left: 70%;
+    text-shadow: 3px 3px 5px black;
+    cursor: pointer;
+}
+
+.gallery h2 {
+    position: absolute;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 70%;
+    left: 10%;
+    color: white;
+    z-index: 2;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 5px #8B8B8B;
+}
+
+.gallery .layer {
+    border: solid white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/*contact section*/
+.contact button {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    color: #8B8B8B;
+    margin-bottom: 50px;
+}
+
+footer p {
+    display: inline-block;
+    font-size: 12px;
+}
+
+footer .logo {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-2_4 {width: 20%}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-4_8 {width: 40%}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    .hero {
+        background-size: 65%;
+        height: 50vh;
+    }
+
+    .hero .layer {
+        height: 50vh;
+    }
+
+    .gallery img {
+        opacity: 1;
+    }
+
+    .gallery .layer {
+        background-color: transparent;
+    }
+
+    .gallery h2 {
+        left: 50%;
+        top: 50%;
+        text-shadow: 3px 3px 5px black;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .gallery .layer:hover h2 {
+        left: 50%;
+        top: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    /* For smartphones: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-2_4 {width: 20%}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-4_8 {width: 40%}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .hero {
+        background-size: 85%;
+        height: 50vh;
+    }
+
+    .hero .layer {
+        height: 50vh;
+    }
+
+    .hero .slogan {
+        overflow: hidden;
+    }
+
+    .gallery img {
+        opacity: 1;
+    }
+
+    .gallery .layer {
+        background-color: transparent;
+    }
+
+    .gallery h2 {
+        left: 50%;
+        top: 50%;
+        text-shadow: 3px 3px 5px black;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .gallery .layer:hover h2 {
+         left: 50%;
+         top: 50%;
+    }
+}

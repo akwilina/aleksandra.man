@@ -1,0 +1,24 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "kodilla task 11.8\r Simple RWD page",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akwilina/aleksandra.man.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akwilina/aleksandra.man/issues"
+  },
+  "homepage": "https://github.com/akwilina/aleksandra.man#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-dollar-sign": "^1.0.0",
+    "eslint-plugin-jquery": "^1.2.0"
+  }
+}
